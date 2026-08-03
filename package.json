@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace=client",
-    "build": "npm run build --workspace=shared && npm run build --workspace=client && rm -rf dist && cp -R client/dist dist && echo '--- output directory ---' && pwd && ls -1 dist",
+    "build": "npm run build --workspace=shared && npm run build --workspace=client && rm -rf dist && cp -R client/dist dist",
     "preview": "npm run preview --workspace=client"
   }
 }
