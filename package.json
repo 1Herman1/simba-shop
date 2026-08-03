@@ -1,13 +1,16 @@
 {
   "name": "simba-shop",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "workspaces": [
     "shared",
     "client"
   ],
   "scripts": {
     "dev": "npm run dev --workspace=client",
-    "build": "npm run build --workspace=client",
+    "build": "npm run build --workspace=shared && npm run build --workspace=client",
     "preview": "npm run preview --workspace=client"
   }
 }
